@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/irakoze-bruce/full-course-nodejs-and-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irakoze-bruce/full-course-nodejs-and-express/issues"
+  },
+  "homepage": "https://github.com/irakoze-bruce/full-course-nodejs-and-express#readme"
+}
