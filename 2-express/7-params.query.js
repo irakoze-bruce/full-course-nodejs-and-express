@@ -29,6 +29,28 @@ app.get("/api/products/:productID", (req, res) => {
   return res.json(singleProduct)
 })
 
+app.get("/api/v1/query", (req, res) => {
+
+  let { search, limit } = req.query
+  let sortProducts = [...products]
+
+  if (search) {
+    sortProducts = sortProducts.filter((product) => {
+      return product.name.startsWith(search)
+    })
+  }
+
+  if (limit) {
+    sortProducts = sortProducts.slice(0, Number(limit))
+  }
+
+  if (sortProducts.length < 1) {
+    res.status(200).json({ succed: true, data: [] })
+  }
+
+  res.status(200).json(sortProducts)
+})
+
 
 
 app.listen(8000, () => {
