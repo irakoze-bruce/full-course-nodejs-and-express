@@ -39,5 +39,4 @@ const people = [
   { id: 4, name: 'anna' },
   { id: 5, name: 'emma' },
 ]
-module.exports = { people }
-module.exports = { products }
+module.exports = { people, products }
